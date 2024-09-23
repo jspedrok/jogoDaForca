@@ -1,0 +1,201 @@
+/* Reset básico para remover margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../images/1_hG17zCQWtiOd9jxDfLhBBQ.png'), url('../images/22205d88004109.5dc9861f20846.webp');
+    background-size: cover;
+    background-position: center, bottom; /* Uma imagem no centro, outra na parte inferior */
+    background-attachment: fixed; /* Faz a imagem de fundo rolar com a página */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo do header */
+    align-items: center;
+    background-color: rgba(0, 131, 185, 0.8); /* Azul com transparência */
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #007bff;
+    text-align: center;
+    margin: 0; /* Remove a margem inferior */
+}
+
+.senai-Logo {
+    max-width: 150px;
+    margin-right: 20px; /* Adiciona espaço entre a imagem e o título */
+}
+
+/* Navegação */
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgba(0, 131, 185, 0.8);
+}
+
+/* Container geral */
+.container {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 20px auto; /* Margin ajustado para centralizar o container */
+    width: 80%; /* Definindo a largura do container */
+}
+
+/* Seções */
+section {
+    padding: 20px;
+    margin: 0 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Títulos das Seções */
+h2 {
+    color: #333;
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #5889b6;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilização da área do jogo da forca */
+#jogo {
+    position: relative;
+}
+
+#palavra {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin: 20px 0;
+}
+
+#dica {
+    font-size: 1.25rem;
+    color: #555;
+}
+
+#status {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#attempts {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #888;
+}
+
+input[type="text"] {
+    width: 333px;
+    margin: 0 auto;
+    display: block;
+}
+
+.botoes {
+    margin-top: 20px;
+}
+
+button {
+    margin: 0 10px;
+    background-color: rgba(0, 0, 0, 0.8); /* Cor alterada dos botões */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8b0000; /* Cor vinho ao passar o mouse */
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #5889b6;
+    border-color: #000000;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #5889b6;
+    border-color: #000000;
+}
+
+/* Estilização da área da forca */
+#forca {
+    border-color: #000;
+    position: relative;
+    width: 150px;
+    height: 250px;
+    margin: 0 auto;
+    border: 2px solid #000;
+    background-color: #f4f4f4;
+}
+
+#forca div {
+    background-color: #333;
+}
+
+#cabeca {
+    border-radius: 50%;
+    border-color: #000
+}
+
+#corpo {
+    background-color: #000;
+    border-color: #000 /* Boneco totalmente preto */
+}
+
+#bracoEsquerdo,
+#bracoDireito {
+    background-color: #000;
+    border-color: #000 /* Braços pretos */
+}
+
+#pernaEsquerda,
+#pernaDireita {
+    background-color: #000;
+    border-color: #000 /* Pernas pretas */
+}

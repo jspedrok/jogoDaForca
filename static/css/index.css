@@ -1,0 +1,75 @@
+body {
+    background-image: url('../images/22205d88004109.5dc9861f20846.webp');
+    background-size: cover; /* Garante que a imagem de fundo cubra toda a área visível */
+    background-position: center; /* Centraliza a imagem de fundo */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Fonte padrão */
+    color: #333; /* Texto preto */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Alinha a imagem à esquerda e o texto à direita */
+    align-items: center; /* Alinha a imagem e o título verticalmente */
+    background-color: rgba(0, 131, 185, 0.8); /* Azul com transparência */
+    padding: 20px;
+}
+
+header .logo {
+    max-width: 120px;
+    height: auto;
+    border-radius: 10px;
+}
+
+header h2 {
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    color: #fff; /* Texto branco */
+    text-shadow: 2px 2px 4px #000;
+    margin: 0;
+    flex: 1; /* Faz o título ocupar o espaço restante */
+    text-align: center; /* Centraliza o texto no espaço disponível */
+    position: relative;
+    top: -85px; /* Move o título 10px para cima */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
+    border-radius: 10px;
+    margin: 20px;
+}
+
+h1, h2, h3 {
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    color: #0083b9;
+    
+}
+
+a.btn-play {
+    background-color: #0083b9; /* Azul */
+    border: none;
+    color: #fff; /* Texto branco */
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+a.btn-play:hover {
+    background-color: #005f8a; /* Azul escuro */
+    color: #fff; /* Texto branco */
+    text-decoration: none;
+}
+
+footer {
+    background-color: rgba(0, 131, 185, 0.8); /* Azul com transparência */
+    color: #fff; /* Texto branco */
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
